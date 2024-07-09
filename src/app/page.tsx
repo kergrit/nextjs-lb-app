@@ -4,7 +4,9 @@ import { headers } from 'next/headers';
 export default function Home() {
 
 const headersList = headers();
-  const hostname = headersList.get('x-forwarded-host');
+  // const hostname = headersList.get('x-forwarded-host');
+  var os = require("os");
+  var hostname = os.hostname();
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
