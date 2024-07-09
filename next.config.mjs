@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   distDir: 'build',
   output: 'standalone',
-  basePath: '/nextjs',
+  // basePath: '/nextjs',
 };
 
 export default nextConfig;
